@@ -1,0 +1,31 @@
+<table>
+<tr><td><h1>Création d'un topic</h1></td></tr>
+<tr>
+<td>
+    titre
+</td>
+<td>
+    <input  [(ngModel)]="topic.titre"  type="text" name="titre">
+</td>
+</tr>
+<tr>
+    <td >
+        description
+    </td>
+    <td >
+        <textarea [(ngModel)]="topic.description"  type="text" name="description"></textarea>
+    </td>
+    </tr>
+    <tr>
+        <td>
+            cle
+        </td>
+        <td>
+            <input [(ngModel)]="topic.cle"  type="text" name="cle" >
+        </td>
+        </tr>
+<tr><td colspan="2"><input  (click) ="CreateRecord()" value="ajouter" type="button"></td></tr>
+
+
+
+</table>
